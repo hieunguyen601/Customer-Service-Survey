@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Customer Service Survey</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/xnnndalr" method="post">
+        <h2 class="title">Customer Service Survey</h2>
+        <fieldset class="information">
+            <legend>Information</legend>
+            <div class="personal">
+                <label for="f-name">Full name</label>
+                <input type="text" id="f-name" name="name" required>
+                <label for="birthday">DOB</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <label for="education">Education</label>
+                <select name="education" id="education" required>
+                    <option value="school">--School--</option>
+                    <option value="university">University</option>
+                    <option value="community college">Community College</option>
+                    <option value="high school">High School</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="service-rating">
+            <legend>Service Rating</legend>
+            <div class="service-rating-1">
+                <p class="question-1">How would you rate our service (1-5) ?</p>
+                <input type="radio" id="rating" name="rating" value="1">
+                <label for="rating">1</label>
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <label for="rating-2">2</label>
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label for="rating-3">3</label>
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label for="rating-4">4</label>
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <label for="rating-5">5</label>
+            </div>
+            
+            <div class="service-rating-2">
+                <p class="question-2">Was the service provided in a timely manner?</p>
+                <input type="radio" id="yes" name="service" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="service" value="no">
+                <label for="no">No</label>
+                <input type="radio" id="somewhat" name="service" value="somewhat">
+                <label for="somewhat">Somewhat</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="staff-rating">
+            <legend>Staff Friendliness</legend>
+            <div class="staff-question-1">
+                <p>How friendly or helpful was the staff?</p>
+                <input type="radio" name="staff friendliness" id="excellent" value="excellent">
+                <label for="excellent">Excellent</label>
+                <input type="radio" name="staff friendliness" id="good" value="good">
+                <label for="good">Good</label>
+                <input type="radio" name="staff friendliness" id="fair" value="fair">
+                <label for="fair">Fair</label>
+                <input type="radio" name="staff friendliness" id="poor" value="poor">
+                <label for="poor">Poor</label>
+            </div>
+            
+            <div class="staff-question-2">
+                <p>How would you describe your overall interaction with the staff?</p>
+                <input type="radio" name="interaction" id="positive" value="positive">
+                <label for="positive">Positive</label>
+                <input type="radio" name="interaction" id="neutral" value="negative">
+                <label for="neutral">Neutral</label>
+                <input type="radio" name="interaction" id="negative" value="negative">
+                <label for="negative">Negative</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="satisfied-question">
+            <legend>Satisfaction Level</legend>
+            <p>How satisfied are you with your overall experience?</p>
+            <input type="radio" name="experience" id="very-satisfied" value="very satisfied">
+            <label for="very-satisfied">Very Satisfied</label>
+            <input type="radio" name="experience" id="satisfied" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" name="experience" id="neutral" value="neutral">
+            <label for="neutral">Neutral</label>
+            <input type="radio" name="experience" id="dissatisfied" value="dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label>
+            <input type="radio" name="experience" id="very-dissatisfied" value="very dissatisfied">
+            <label for="very-dissatisfied">Very Dissatisfied</label>
+        </fieldset>
+
+        <fieldset class="feedback">
+            <legend>Open-Ended Feedback</legend>
+            <div class="favorite-service">
+                <label for="opinion">What did you like most about the service?</label>
+                <textarea name="favorite" id="opinion" placeholder="Answer here..."></textarea>
+            </div>
+
+            <div class="favorite-service">
+                <label for="improve">What can we improve?</label>
+                <textarea name="improvement" id="improve" placeholder="Answer here..."></textarea>
+            </div>
+        </fieldset>
+
+        <button class="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>

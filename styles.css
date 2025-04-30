@@ -1,0 +1,74 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.personal {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal input, select {
+    border-radius: 5px;
+    height: 28px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+.favorite-service {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.favorite-service textarea {
+    height: 80px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.submit {
+    display: block;
+    margin: 2rem auto; /* centers horizontally */
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #14aff1;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit:hover {
+    background-color: #2998c8;
+  }
+  
+  .submit:active {
+    opacity: 0.6;
+  }
